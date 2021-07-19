@@ -1,0 +1,5 @@
+platform:ios,'14.0'
+
+target 'Demo' do
+pod 'SFSwiftExtensions', '0.0.1'
+end

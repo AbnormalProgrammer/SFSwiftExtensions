@@ -11,7 +11,7 @@
 你想要的行为这里都有。
 ## 如何使用？
 通过`Pod`引入<br>
-`pod 'SFSwiftExtensions', '0.0.1''`
+`pod 'SFSwiftExtensions', '0.0.1'`
 
 下面是使用示例代码：<br>
 ```

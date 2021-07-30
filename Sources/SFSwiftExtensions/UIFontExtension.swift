@@ -36,4 +36,16 @@ extension UIFont {
     static func Arial_BoldMT(_ size:CGFloat) -> UIFont {
         return UIFont.init(name: "Arial-BoldMT", size: size) ?? UIFont.systemFont(ofSize: size)
     }
+    
+    static func CapsuleSansText_Book(_ size:CGFloat) -> UIFont {
+        return UIFont.init(name: "CapsuleSansText-Book", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    static func CapsuleSansText_Medium(_ size:CGFloat) -> UIFont {
+        return UIFont.init(name: "CapsuleSansText-Medium", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
+    
+    static func CapsuleSansText_Bold(_ size:CGFloat) -> UIFont {
+        return UIFont.init(name: "CapsuleSansText-Bold", size: size) ?? UIFont.systemFont(ofSize: size)
+    }
 }

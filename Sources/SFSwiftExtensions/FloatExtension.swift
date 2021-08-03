@@ -12,4 +12,8 @@ extension Float {
     func toCGFloat() -> CGFloat {
         return CGFloat.init(self)
     }
+    
+    func toString() -> String {
+        return String.init(format: "%f", self)
+    }
 }

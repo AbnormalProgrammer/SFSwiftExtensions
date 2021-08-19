@@ -65,4 +65,64 @@ extension String {
     static func gainClassName(_ type:AnyClass) -> String {
         return String.init(cString: object_getClassName(type.self))
     }
+    
+    /// 判断一个字符串是不是数值
+    /// 把字符串进行拆分
+    /// 以小数点进行拆解
+    /// 最多分成2部分
+    /// - Returns: 是否是数值
+    func isDecimal() -> Bool {
+        let splitedString:[Substring] = self.split(maxSplits: 1, omittingEmptySubsequences: false, whereSeparator: {$0 == "."})
+        guard splitedString.count <= 2 && splitedString.count > 0 else {
+            return false
+        }
+        return splitedString.allSatisfy {Int.init(String.init($0)) != nil || $0.count == 0}
+    }
+    
+    /// 获取一个浮点型字符串的
+    /// 整数部分的位数
+    /// 和小数部分的位数
+    /// 该方法能正常运行的前提
+    /// 是你必须输入一个正确的
+    /// 小数
+    /// - Returns: 整数部分和小数部分位数
+    func gainDigitsOfFloat() -> (Int,Int) {
+        let splitedString:[Substring] = self.split(maxSplits: 1, omittingEmptySubsequences: false, whereSeparator: {$0 == "."})
+        var result:(Int,Int) = (0,0)
+        for index in 0..<min(splitedString.count, 2) {
+            switch index {
+            case 0:
+                result.0 = splitedString[index].count
+            default:
+                result.1 = splitedString[index].count
+            }
+        }
+        return result
+    }
+    
+    /// 根据给定的采样精度字符串
+    /// 去限制给定的数字字符串
+    /// - Parameter inputSample: 精度采样字符串
+    /// - Returns:阶段以后的字符串
+    func convertToSamplePrecision(_ inputSample:String) -> String {
+        let digitsNumber:(Int,Int) = inputSample.gainDigitsOfFloat()
+        let selfDigitsNumber:(Int,Int) = self.gainDigitsOfFloat()
+        let formatter:NumberFormatter = NumberFormatter.init()
+        //设置number显示样式
+        formatter.maximumIntegerDigits = selfDigitsNumber.0
+        formatter.maximumFractionDigits = digitsNumber.1 //设置最小整数位数（不足的前面补0）
+        formatter.roundingMode = .floor
+        formatter.numberStyle = .decimal
+        formatter.usesGroupingSeparator = false
+        formatter.decimalSeparator = "."
+        var result:String = ""
+        guard let nonnilNumber = formatter.number(from: self) else {
+            return result
+        }
+        guard let nonnilStirng = formatter.string(from: nonnilNumber) else {
+            return result
+        }
+        result = nonnilStirng
+        return result
+    }
 }

@@ -7,14 +7,14 @@
 
 import Foundation
 
-extension String {
+public extension String {
     /// 占位用的文字
     /// - Returns: 占位用的文字
-    static func placeholder0() -> String {
+    public static func placeholder0() -> String {
         return "placeholder"
     }
     
-    static func placeholder1() -> String {
+    public static func placeholder1() -> String {
         return "to return"
     }
     
@@ -22,7 +22,7 @@ extension String {
      根据正则表达式判断一个字符串是不是
      手机号码
      */
-    func isPhoneNumber() -> Bool {
+    public func isPhoneNumber() -> Bool {
         let pattern:String = "^((13[0-9])|(14[0,1,4-9])|(15[0-3,5-9])|(16[2,5,6,7])|(17[0-8])|(18[0-9])|(19[0-3,5-9]))\\d{8}$"
         var regex:NSRegularExpression = NSRegularExpression.init()
         do {

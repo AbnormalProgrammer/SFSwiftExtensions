@@ -124,7 +124,7 @@ extension String {
     /// 这里面的精度认为是小数点后
     /// - Parameter inputSample: 精度采样字符串
     /// - Returns:阶段以后的字符串
-    func convertToSamplePrecision(_ inputSample:String) -> String {
+    public func convertToSamplePrecision(_ inputSample:String) -> String {
         if self.contains(".") == false {
             return self
         } else {

@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SFSwiftExtensions"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "这是我不断整理的Swift扩展的合集"
 
   # This description is used to generate tags and improve search results.

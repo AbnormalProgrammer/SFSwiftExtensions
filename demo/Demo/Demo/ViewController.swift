@@ -6,16 +6,15 @@
 //
 
 import UIKit
+import SFSwiftExtensions
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         print(CGFloat.pi)
-        print("123.45678".convertToSamplePrecision("0.1"))
+        print("123.456".convertToSamplePrecision("0.01"))
         // Do any additional setup after loading the view.
     }
-
-
 }
 

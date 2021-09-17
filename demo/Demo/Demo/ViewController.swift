@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(CGFloat.pi)
+        let testString:String = "123.34567".isPhoneNumber()
         // Do any additional setup after loading the view.
     }
 

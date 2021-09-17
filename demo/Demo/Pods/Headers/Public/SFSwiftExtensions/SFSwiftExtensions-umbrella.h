@@ -1,1 +1,0 @@
-../../../Target Support Files/SFSwiftExtensions/SFSwiftExtensions-umbrella.h

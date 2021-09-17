@@ -1,4 +1,4 @@
-module SFSwiftExtensions {
+framework module SFSwiftExtensions {
   umbrella header "SFSwiftExtensions-umbrella.h"
 
   export *

@@ -132,7 +132,7 @@ extension String {
             let elementsNumber:Int = distance(from: pointIndex, to: self.endIndex) - 1
             /*最多保留小数点后n位*/
             let digitsNumber:(Int,Int) = inputSample.gainDigitsOfFloat()
-            return self[...self.index(pointIndex, offsetBy: min(elementsNumber, digitsNumber.1))].toString()
+            return String.init(self[...self.index(pointIndex, offsetBy: min(elementsNumber, digitsNumber.1))])
         }
     }
 }

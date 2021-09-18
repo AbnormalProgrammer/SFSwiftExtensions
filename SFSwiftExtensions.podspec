@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "SFSwiftExtensions"
-  spec.version      = "0.1.4"
+  spec.version      = "0.1.5"
   spec.summary      = "这是我不断整理的Swift扩展的合集"
 
   # This description is used to generate tags and improve search results.
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Sources/SFSwiftExtensions", "Sources/SFSwiftExtensions/*.swift"
+  spec.source_files  = "Test/Test/SFSwiftExtensions", "Test/Test/SFSwiftExtensions/*.swift"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"

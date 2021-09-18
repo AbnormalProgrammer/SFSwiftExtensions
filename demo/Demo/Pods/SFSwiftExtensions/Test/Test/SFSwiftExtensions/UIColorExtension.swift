@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     /// 根据输入的16进制获取颜色值
     /// - Parameter hex: 就是16进制表示的整数，形式为0xffffff，只限于此，顺序为rgb.
     /// - Returns: 获得的颜色

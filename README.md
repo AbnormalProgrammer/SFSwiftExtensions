@@ -11,21 +11,20 @@
 你想要的行为这里都有。
 ## 如何使用？
 通过`Pod`引入<br>
-`pod 'SFSwiftExtensions', '0.0.1'`
+`pod 'SFSwiftExtensions', '0.1.5'`
 
 下面是使用示例代码：<br>
 ```
 import UIKit
+import SFSwiftExtensions
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(CGFloat.pi)
-        // Do any additional setup after loading the view.
+        print(CGFloat.randomPercentage())
+        print("123.456".isPhoneNumber())
     }
-
-
 }
 ```
 源代码在source文件夹里面，请自行取用。

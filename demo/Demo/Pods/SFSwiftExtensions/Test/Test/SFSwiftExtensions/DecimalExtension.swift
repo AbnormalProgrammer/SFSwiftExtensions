@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Decimal {
+public extension Decimal {
     /*
      把十进制转换成字符串
      */

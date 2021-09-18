@@ -2,5 +2,5 @@ platform:ios,'14.0'
 use_frameworks!
 
 target 'Demo' do
-  pod 'SFSwiftExtensions', '0.1.4'
+  pod 'SFSwiftExtensions', '0.1.5'
 end

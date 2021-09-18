@@ -10,11 +10,11 @@ import Foundation
 public extension String {
     /// 占位用的文字
     /// - Returns: 占位用的文字
-    public static func placeholder0() -> String {
+    static func placeholder0() -> String {
         return "placeholder"
     }
     
-    public static func placeholder1() -> String {
+    static func placeholder1() -> String {
         return "to return"
     }
     
@@ -22,7 +22,7 @@ public extension String {
      根据正则表达式判断一个字符串是不是
      手机号码
      */
-    public func isPhoneNumber() -> Bool {
+    func isPhoneNumber() -> Bool {
         let pattern:String = "^((13[0-9])|(14[0,1,4-9])|(15[0-3,5-9])|(16[2,5,6,7])|(17[0-8])|(18[0-9])|(19[0-3,5-9]))\\d{8}$"
         var regex:NSRegularExpression = NSRegularExpression.init()
         do {
@@ -124,7 +124,7 @@ public extension String {
     /// 这里面的精度认为是小数点后
     /// - Parameter inputSample: 精度采样字符串
     /// - Returns:阶段以后的字符串
-    public func convertToSamplePrecision(_ inputSample:String) -> String {
+    func convertToSamplePrecision(_ inputSample:String) -> String {
         if self.contains(".") == false {
             return self
         } else {

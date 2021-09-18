@@ -10,7 +10,7 @@ import GLKit
 /*
  用来计算其次矩阵相关
  */
-extension GLKMatrix4 {
+public extension GLKMatrix4 {
     /// 打印其次矩阵的各个分量，以便调试
     /// - Returns: 空
     func printMatrix() -> Void {
@@ -77,13 +77,13 @@ extension GLKMatrix4 {
     }
 }
 
-extension GLKVector2 {
+public extension GLKVector2 {
     func model() -> Float {
         return GLKVector2Length(self)
     }
 }
 
-extension GLKVector3 {
+public extension GLKVector3 {
     func fork(_ another:GLKVector3) -> GLKVector3 {
         return GLKVector3CrossProduct(self, another)
     }
@@ -104,7 +104,7 @@ extension GLKVector3 {
     }
 }
 
-extension GLKVector4 {
+public extension GLKVector4 {
     static func zero4() -> GLKVector4 {
         return GLKVector4Make(0, 0, 0, 0)
     }

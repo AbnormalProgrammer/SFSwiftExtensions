@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension Calendar {
+public extension Calendar {
     func lastYear() -> Int {
         let dateComponents:DateComponents = self.dateComponents(in: TimeZone.autoupdatingCurrent, from: Date.init())
         return dateComponents.year! - 1

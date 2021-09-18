@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension Int {
+public extension Int {
     func toCGFloat() -> CGFloat {
         return CGFloat.init(self)
     }

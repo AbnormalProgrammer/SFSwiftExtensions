@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UINavigationBar {
+public extension UINavigationBar {
     /// 设置导航栏的背景色
     /// - Parameter color: 输入的颜色
     /// - Returns: 空

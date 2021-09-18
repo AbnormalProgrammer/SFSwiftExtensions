@@ -1,16 +1,16 @@
 PODS:
-  - SFSwiftExtensions (0.1.4)
+  - SFSwiftExtensions (0.1.5)
 
 DEPENDENCIES:
-  - SFSwiftExtensions (= 0.1.4)
+  - SFSwiftExtensions (= 0.1.5)
 
 SPEC REPOS:
   trunk:
     - SFSwiftExtensions
 
 SPEC CHECKSUMS:
-  SFSwiftExtensions: 31151537f222d8d3453bce4bdcb1a527c6c6b8b1
+  SFSwiftExtensions: 0b94ce395c6baf0d012e64170373e06935dd2e4b
 
-PODFILE CHECKSUM: 3e738da040771974a1ad0971cb515b227f36fef0
+PODFILE CHECKSUM: e925b26883290dea1f4c086a7fe90d8a4de013c8
 
 COCOAPODS: 1.11.2

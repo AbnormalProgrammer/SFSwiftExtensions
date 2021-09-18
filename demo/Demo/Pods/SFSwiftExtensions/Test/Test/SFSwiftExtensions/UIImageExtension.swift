@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIImage {
+public extension UIImage {
     /// 用来占位的图片
     /// - Returns: 展位图片
     static func placeholderImage0() -> UIImage {

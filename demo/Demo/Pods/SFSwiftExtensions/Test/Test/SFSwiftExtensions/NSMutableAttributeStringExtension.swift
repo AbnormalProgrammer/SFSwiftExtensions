@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension NSMutableAttributedString {
+public extension NSMutableAttributedString {
     /// 就是一般性的属性文字
     /// 可以用于一般的页面
     /// - Parameters:

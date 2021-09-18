@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UITabBarController {
+public extension UITabBarController {
     /// 因为UITabBarController的tabBar是只读的属性
     /// 所以直接赋值是做不到的，因此这里通过KVC来重置
     /// UITabBarController的tabBar

@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension TimeInterval {
+public extension TimeInterval {
     /// 根据给定的格式化字符串
     /// 把时间戳格式化成为
     /// 指定格式的时间

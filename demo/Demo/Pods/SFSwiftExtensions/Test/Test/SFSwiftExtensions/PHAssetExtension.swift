@@ -9,7 +9,7 @@ import Foundation
 import Photos
 import UIKit
 
-extension PHAsset {
+public extension PHAsset {
     /// 根据资源获取对应的缩略图
     /// 截取中间部分
     /// - Parameter length: 给定的边长

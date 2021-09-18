@@ -8,7 +8,7 @@
 import Foundation
 import PhotosUI
 
-extension PHPickerResult {
+public extension PHPickerResult {
     /// 根据PHPickerResult的数组
     /// 获取到对应的图片
     /// - Parameter inputs: 检索出来的结果

@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIView {
+public extension UIView {
     /// 判断子视图中是否存在指定类型的视图
     /// - Parameter inputType: 输入的类型
     /// - Returns: 是否存在

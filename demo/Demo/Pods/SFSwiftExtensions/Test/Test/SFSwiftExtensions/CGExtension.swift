@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 import GLKit
 
-extension CGRect {
+public extension CGRect {
     /// 获取以本视图的bounds为父框架
     /// 输入指定尺寸的子视图的bounds
     /// 并让子视图自动与父视图的中心对齐
@@ -32,7 +32,7 @@ extension CGRect {
     }
 }
 
-extension CGSize {
+public extension CGSize {
     /// 把原来尺寸以中心对齐的方式缩放到指定尺寸
     /// 所需要的边距
     /// - Parameter targetSize: 目标尺寸
@@ -63,13 +63,13 @@ extension CGSize {
     }
 }
 
-extension CGVector {
+public extension CGVector {
     func toGLKVector2() -> GLKVector2 {
         return GLKVector2Make(Float.init(self.dx), Float.init(self.dy))
     }
 }
 
-extension CGFloat {
+public extension CGFloat {
     static var pi:CGFloat {
         get {
             return CGFloat.init(Double.pi)
@@ -106,7 +106,7 @@ extension CGFloat {
     }
 }
 
-extension CGPoint {
+public extension CGPoint {
     func addVector(_ vector:CGVector) -> CGPoint {
         return CGPoint.init(x: self.x + vector.dx, y: self.y + vector.dy)
     }

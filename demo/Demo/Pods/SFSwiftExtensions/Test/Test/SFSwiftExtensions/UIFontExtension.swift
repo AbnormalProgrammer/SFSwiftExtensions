@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIFont {
+public extension UIFont {
     /// 首页左上角的字体
     /// - Returns: 字体
     static func upcornerFont() -> UIFont {
